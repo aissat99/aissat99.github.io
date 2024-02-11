@@ -82,3 +82,11 @@ body
     background-color: #3E3232;
     color: #F5F7F8;
 }
+
+.greetings {
+    font-size: larger;
+}
+
+.intro {
+    font-size: large;
+}
