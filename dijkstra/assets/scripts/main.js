@@ -72,9 +72,6 @@ function dijkstra(start_point, url_target)
     // updating the UI
     let end_point = searchPath(url_target, distances);
     buildPath(start_point, end_point, predecessors);    // this will color the edges
-
-    // exporting the result
-    print();
 }
 
 // function that looks for all the neighbours of a given node
