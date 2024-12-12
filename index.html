@@ -3,14 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Julie Tassia RAFIDY</title>
-    <link rel="stylesheet" href="./assets/styles/index.css">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="assets/styles/index.css"> <!-- Add your CSS file -->
 </head>
 <body>
-    <h1 class="greetings courgette-regular">Hello world!</h1>
-    <p class="intro inria-sans-regular">
-        Work in progress... <br>
-        Come back later :)
-    </p>
+
+    <!-- Header with Menu -->
+    <header class="inria-sans-regular">
+        <nav id="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h1 class="courgette-regular">Tongasoa</h1>
+
+            <!-- Greeting Subsection -->
+            <div class="greeting">
+                <p>Hello! I'm [Your Name], a passionate web developer.</p>
+            </div>
+
+            <!-- Skills List -->
+            <div class="skills">
+                <h2>My Skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <!-- Add more skills as needed -->
+                </ul>
+            </div>
+
+            <!-- Contact Links -->
+            <div class="contact-links">
+                <h2>Contact Me</h2>
+                <ul>
+                    <li><a href="resume.pdf" target="_blank">Resume</a></li>
+                    <li><a href="mailto:youremail@example.com">Email</a></li>
+                    <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <!-- Project 1 -->
+            <div class="project">
+                <h3>Project 1: [Project Title]</h3>
+                <p>[Project description]</p>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project">
+                <h3>Project 2: [Project Title]</h3>
+                <p>[Project description]</p>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project">
+                <h3>Project 3: [Project Title]</h3>
+                <p>[Project description]</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="submit_form.php" method="post">
+                <div>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div>
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer (optional) -->
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>

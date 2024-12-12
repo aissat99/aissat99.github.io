@@ -81,6 +81,7 @@ body
 {
     background-color: #3E3232;
     color: #F5F7F8;
+    margin: 0;
 }
 
 .greetings {
@@ -89,4 +90,58 @@ body
 
 .intro {
     font-size: large;
+}
+
+/*------------------HEADER-----------------------*/
+
+/* Styling the header */
+header {
+  height: auto;
+  position: sticky;  /* Make the header stick when scrolling */
+  top: 0;            /* Stick to the top of the page */
+  background-color: #D9EAFD;
+  display: flex;
+  justify-content: flex-end;  /* Align content to the right */
+  padding: 0.20em 2%;  /* Add 2% space on the right */
+  /* z-index: 99; */
+}
+
+/* Styling the navigation bar */
+#menu {
+  width: 30%;  /* Occupy 30% of the screen width */
+}
+
+/* Styling the list */
+#menu ul{
+  display: flex;  /* Display list items horizontally */
+  justify-content: space-between;  /* Distribute space evenly */
+  margin: 0;  /* Remove default list margin */
+  padding: 0;  /* Remove default padding */
+  list-style: none;  /* Remove default list bullets */
+}
+
+#menu > ul > li{
+  padding: 0.5em;
+  box-sizing: border-box;
+}
+
+/* Styling the links */
+a {
+  color: white;
+  text-decoration: none;  /* Remove underline */
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0.4em 0.6em;
+}
+
+/*Styling links when hovered*/
+a:hover {
+  border-bottom: #D9EAFD solid;
+}
+/*--------------------HEADER END------------------------------*/
+
+/*--------------------MAIN CONTENT-----------------------------*/
+main{
+  margin-top: 5em;
+  margin: 7em 5%;
 }
