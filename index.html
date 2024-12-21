@@ -14,8 +14,9 @@
     <header class="inria-sans-bold">
         <nav>
             <ul class="menu">
-                <li><a href="index.html#about">About Me</a></li>
-                <li><a href="project.html">Projects</a></li>
+                <li><a href="index.html#">Home</a></li>
+                <li><a href="index.html#interests">About Me</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
             </ul>
         </nav>
         <div id="resume">
@@ -23,14 +24,14 @@
         </div>
     </header>
     <main>
-        <div class="greetings">
+        <div class="greetings" id="greetings">
             <h1 class="dancing-script">Tongasoa!</h1>
         </div>
         <div id="about" class="section-title">
             <div class="intro inria-sans-regular">
                 <p>
                     I am Tassia, a Computer Science graduate student. <br>
-                    Currently exploring the world of Computer Science looking for a field to work on in the long run :) <br>
+                    Currently exploring the world of Computer Science, looking for a field to work on in the long run :) <br>
                 </p>
             </div>
             <div class="pic">
@@ -42,7 +43,7 @@
             <a href="https://www.linkedin.com/in/aissat0428b7225/" target="_blank"><img src="assets/images/linkedin_icon.svg" alt="linkedin"></a>
             <a href="https://www.facebook.com/julie.tassia9" target="_blank"><img src="assets/images/fb_icon.svg" alt="facebook"></a>
         </div>
-        <div class="intro inria-sans-regular" id="interests">
+        <div class="intro inria-sans-regular anchor" id="interests">
             <h2>What I am interested in</h2>
             <ul class="list_unordered" id="area_of_interests">
                 <li>Computer networks</li>
@@ -51,6 +52,62 @@
                 <li>Gamification</li>
                 <li>Foreign languages</li>
             </ul>
+        </div>
+        <div id="projects" class="section-title intro inria-sans-regular anchor">
+            <div>
+                <h2>My recent work</h2>
+                <p>Here you can find what I have been up to recently.</p>
+            </div>
+            <div class="projet">
+                <div class="descri left"></div>
+                <div class="illustration right"></div>
+            </div>
+            <div class="projet">
+                <h3>[Algorithms] LAN simplified</h3>
+                <div class="project_content impair">
+                    <img src="" alt="">
+                    <p>
+                        An application of the Dijkstra algorithm with shortest path search within a network of pseudo servers. <br>
+                        The goal is to mimic a real-world request-response process: a client tries to request a pseudo page and makes a request to the closest server hosting the website on the network.
+                        The server then sends the requested page back to the client. <br>
+                        Technology used:
+                        <a href=""><img src="" alt="Express.js"></a>
+                        <a href=""><img src="" alt="Socket.io"></a>
+                        <a href=""><img src="" alt="HTML"></a>
+                        <a href=""><img src="" alt="CSS"></a>
+                    </p>
+                </div>
+            </div>
+            <div class="projet">
+                <h3>[Algorithms] Taquin</h3>
+                <div class="project_content pair">
+                    <img src="" alt="">
+                    <p>
+                        A puzzle game that uses the Breadth-First Search (BFS) algorithm to make an IA solve the puzzle. <br>
+                        The player can shuffle the puzzle and move pieces around to try to solve it, or make the IA solve the puzzle itself. <br>
+                        Technology used:
+                        <a href=""><img src="" alt="C++"></a>
+                        <a href=""><img src="" alt="Tkinter"></a>
+                    </p>
+                </div>
+            </div>
+            <div class="projet">
+                <h3>[Algorithms] Katro</h3>
+                <div class="project_content impair">
+                    <img src="" alt="">
+                    <p>
+                        The Malagasy version of the african game 'Awalé'.<br>
+                        A first version of the game where the player can play with an IA to try to obtain all the seeds available on the grid. <br>
+                        The IA is implemented using the minimax algorithm. <br>
+                        Technology used:
+                        <a href=""><img src="" alt="Python"></a>
+                        <a href=""><img src="" alt="Tkinter"></a>
+                    </p>
+                </div>
+            </div>
+            <div class="more_projects">
+                <a href="https://github.com/aissat99">See more</a>
+            </div>
         </div>
     </main>
     <footer>
