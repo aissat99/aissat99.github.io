@@ -1,11 +1,19 @@
 /*Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
 .courgette-regular {
     font-family: "Courgette", cursive;
     font-weight: 400;
     font-style: normal;
-}  
+}
+
+.dancing-script{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
 
 .nunito-sans-regular
 {
@@ -79,69 +87,121 @@
 
 body
 {
-    background-color: #3E3232;
-    color: #F5F7F8;
-    margin: 0;
+    background-color: #B6BBC4;
+    color: #161A30;
+    font-size: 1em;
+    line-height: 1.5;
 }
 
+/* ----------------Start Menu section------------------- */ 
+header {
+  height: 60px;
+  width: 100%;
+  position: sticky;
+  top:  0;
+  background-color: #B6BBC4;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  font-size: 1.5em;
+  z-index:  1000;
+}
+header nav{
+  width: 20%;
+  /* background-color: #F5F7F8; */
+}
+.menu{
+  display: flex;
+  justify-content:space-around;
+}
+#resume {
+  width: 10%;
+  box-sizing: border-box;
+  padding: 0 2%;
+}
+/* ----------------End Menu section------------------- */ 
+
+/* ----------------Start About section------------------- */ 
 .greetings {
-    font-size: larger;
+  font-size: 3em;
+  display: flex;
+  flex-direction: column;
+}
+
+#about{
+  display: flex;
+  /* justify-content: center; */
+}
+
+#about .intro{
+  flex: 2 300px;
+}
+.greetings h1{
+  margin-bottom: 1%;
+}
+.intro p{
+  margin-top: 0;
+}
+#about .pic{
+  flex: 1 100px;
 }
 
 .intro {
-    font-size: large;
+    font-size: 2em;
 }
 
-/*------------------HEADER-----------------------*/
-
-/* Styling the header */
-header {
-  height: auto;
-  position: sticky;  /* Make the header stick when scrolling */
-  top: 0;            /* Stick to the top of the page */
-  background-color: #D9EAFD;
-  display: flex;
-  justify-content: flex-end;  /* Align content to the right */
-  padding: 0.20em 2%;  /* Add 2% space on the right */
-  /* z-index: 99; */
+a, ul{
+  text-decoration: none;
+  list-style-type: none;
+  margin:  0;
+  padding:  0;
+  color: inherit;
 }
 
-/* Styling the navigation bar */
-#menu {
-  width: 30%;  /* Occupy 30% of the screen width */
-}
-
-/* Styling the list */
-#menu ul{
-  display: flex;  /* Display list items horizontally */
-  justify-content: space-between;  /* Distribute space evenly */
-  margin: 0;  /* Remove default list margin */
-  padding: 0;  /* Remove default padding */
-  list-style: none;  /* Remove default list bullets */
-}
-
-#menu > ul > li{
-  padding: 0.5em;
-  box-sizing: border-box;
-}
-
-/* Styling the links */
-a {
-  color: white;
-  text-decoration: none;  /* Remove underline */
-  font-size: 20px;
-  font-weight: bold;
-  padding: 0.4em 0.6em;
-}
-
-/*Styling links when hovered*/
-a:hover {
-  border-bottom: #D9EAFD solid;
-}
-/*--------------------HEADER END------------------------------*/
-
-/*--------------------MAIN CONTENT-----------------------------*/
 main{
-  margin-top: 5em;
-  margin: 7em 5%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  padding: 0 10%;
 }
+
+.contact {
+  width: 20%;
+  display: flex;
+}
+.contact a img {
+  width: 3em;
+  margin: 0 15px;
+}
+
+#interests h2 {
+  /* text-align: center; */
+  margin-bottom: 0;
+}
+.list_unordered {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: 0 30px */
+}
+.list_unordered li {
+  flex: 0 0 calc(33.33% - 20px); /* Adjust the width based on your design */
+  margin: 10px; /* Adjust margin as needed */
+  margin-top: 1em;
+}
+
+
+
+/*--------------- Footer style---------------------*/
+footer {
+  height: 30px;
+  width: 100%;
+  margin: 0;
+  /* display: flex; */
+}
+.copyright {
+  width: 100%;
+  /* padding: auto; */
+  text-align: center; /* Align text to the center */
+  bottom: 0;
+}
+
